@@ -9,3 +9,5 @@ graphify-out/
 .vite/
 test-results/
 playwright-report/
+.vercel
+.env*
