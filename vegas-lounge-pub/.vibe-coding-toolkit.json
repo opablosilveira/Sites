@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "source": "soumatheusgomes/vibe-coding-toolkit",
+  "sourceCommit": "13add21194467dfd2fc5b408ddb3398d306a4c78",
+  "modules": [
+    "eslint",
+    "biome-format",
+    "husky",
+    "memory",
+    "portless",
+    "playwright"
+  ],
+  "ownedFiles": [
+    "AGENTS.md",
+    "eslint.config.js",
+    "biome.json",
+    ".husky/pre-commit",
+    "memory/README.md",
+    "playwright.config.ts",
+    ".vibe-coding-toolkit.json"
+  ],
+  "commands": {
+    "dev": "npm start",
+    "verify": "npm run verify",
+    "format": "npm run format",
+    "graph": "npm run graph:update"
+  },
+  "graphify": {
+    "mode": "code-only",
+    "localDependency": false,
+    "strict": false,
+    "status": "partial-tsx-parser-support"
+  },
+  "ci": { "status": "not-applicable-no-remote" },
+  "url": "https://unifarmas.localhost"
+}

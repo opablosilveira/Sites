@@ -1,0 +1,13 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+graphify-out/
+.husky/_/
+.vite/
+test-results/
+playwright-report/
+.vercel
+.env*
