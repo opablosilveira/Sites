@@ -1,0 +1,301 @@
+/* ============================================================
+   RESPONSIVIDADE & MEDIA QUERIES
+   ============================================================ */
+
+/* Telas Médias / Tablets Grandes (<= 1024px) */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+
+  .eyebrow {
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    max-width: 700px;
+    margin-inline: auto;
+  }
+
+  .hero-lead {
+    margin-inline: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .trust-stats {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+
+  .seal-badge {
+    right: 0px;
+    bottom: -10px;
+  }
+
+  .live-chip {
+    left: 0px;
+  }
+
+  .diagnosis-grid,
+  .proof-grid,
+  .authority-grid,
+  .faq-grid,
+  .final-panel {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .offers-grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin-inline: auto;
+  }
+}
+
+/* Tablets e Mobile (<= 860px) */
+@media (max-width: 860px) {
+  .nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav.mobile-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    right: 0;
+    background: #0d0e0c;
+    border-bottom: 1px solid var(--line-dark);
+    padding: 32px 6vw;
+    gap: 22px;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.7);
+  }
+
+  .nav.mobile-open a {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .method-header {
+    grid-template-columns: 1fr;
+  }
+
+  .fit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .authority-media {
+    max-width: 520px;
+    margin-inline: auto;
+  }
+
+  .proof-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Smartphones (<= 640px) */
+@media (max-width: 640px) {
+  .header {
+    height: 72px;
+  }
+
+  .nav.mobile-open {
+    top: 72px;
+  }
+
+  .header-cta {
+    display: none;
+  }
+
+  .section-container {
+    width: 90vw;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-block: 40px 60px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(34px, 9vw, 50px);
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .trust-stats {
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: space-around;
+  }
+
+  .trust-item strong {
+    font-size: 20px;
+  }
+
+  .seal-badge {
+    width: 100px;
+    height: 100px;
+    right: -5px;
+    bottom: -10px;
+  }
+
+  .seal-badge strong {
+    font-size: 34px;
+  }
+
+  .seal-badge span {
+    font-size: 8px;
+  }
+
+  .live-chip {
+    left: 5px;
+    top: 15px;
+    padding: 8px 14px;
+    font-size: 9px;
+  }
+
+  .marquee-content span {
+    font-size: 15px;
+  }
+
+  .marquee-content b {
+    padding: 0 16px;
+  }
+
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .error-card {
+    grid-template-columns: 32px 1fr 24px;
+    gap: 12px;
+  }
+
+  .error-text h3 {
+    font-size: 16px;
+  }
+
+  .offer-card {
+    padding: 28px 20px;
+  }
+
+  .authority-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .final-panel {
+    padding: 32px 20px;
+  }
+
+  .final-actions {
+    width: 100%;
+  }
+
+  .final-actions .btn {
+    width: 100%;
+  }
+
+  .floating-whatsapp {
+    bottom: 18px;
+    right: 18px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Telas Pequenas (<= 390px e 360px) */
+@media (max-width: 390px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .portrait-wrapper {
+    aspect-ratio: 0.95;
+    border-radius: 120px 120px 24px 24px;
+  }
+
+  .trust-stats {
+    gap: 12px;
+  }
+
+  .trust-item strong {
+    font-size: 18px;
+  }
+
+  .trust-item span {
+    font-size: 9px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 12px 20px;
+  }
+}
+
+/* Acessibilidade: prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .marquee-content {
+    animation: none;
+  }
+
+  .seal-badge {
+    animation: none;
+  }
+
+  .live-dot {
+    animation: none;
+  }
+}
