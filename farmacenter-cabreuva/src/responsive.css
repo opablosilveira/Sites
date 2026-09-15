@@ -1,0 +1,557 @@
+@media (min-width: 1600px) {
+  .hero {
+    padding-left: max(5%, calc((100vw - 1450px) / 2));
+    padding-right: max(5%, calc((100vw - 1450px) / 2));
+  }
+}
+@media (max-width: 1100px) {
+  .navigation {
+    gap: 20px;
+  }
+  .hero-grid {
+    min-height: 590px;
+  }
+  .hero h1 {
+    letter-spacing: -5px;
+  }
+  .hero-visual {
+    height: 490px;
+  }
+  .photo-main {
+    height: 350px;
+  }
+  .photo-small {
+    height: 200px;
+  }
+  .hero-sticker {
+    width: 115px;
+    height: 115px;
+  }
+  .hero-sticker span {
+    font-size: 20px;
+  }
+  .visual-cross {
+    font-size: 66px;
+  }
+  .section-pad {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .category-copy {
+    padding: 33px;
+  }
+  .service-card {
+    padding: 24px;
+  }
+  .visit-section {
+    gap: 40px;
+  }
+  .visit-actions {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .visit-copy h2 {
+    font-size: 42px;
+  }
+  .faq-section {
+    gap: 40px;
+  }
+  .cta-flower {
+    right: 3%;
+    font-size: 250px;
+    top: 60px;
+  }
+  .final-cta h2 {
+    font-size: 55px;
+  }
+  .footer-main {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 760px) {
+  html {
+    scroll-padding-top: 25px;
+  }
+  .header {
+    height: 79px;
+    padding: 0 6%;
+  }
+  .brand {
+    font-size: 26px;
+  }
+  .brand-icon {
+    width: 33px;
+    height: 33px;
+  }
+  .brand small {
+    font-size: 6px;
+    letter-spacing: 2px;
+  }
+  .header-contact {
+    margin-left: auto;
+    margin-right: 18px;
+    font-size: 10px;
+    padding: 10px 13px;
+    gap: 9px;
+  }
+  .menu-toggle {
+    display: grid;
+    place-items: center;
+    background: transparent;
+    padding: 5px;
+  }
+  .navigation {
+    display: none;
+  }
+  .navigation.is-open {
+    position: absolute;
+    display: flex;
+    top: 79px;
+    left: 0;
+    right: 0;
+    background: var(--cream);
+    padding: 28px 6%;
+    flex-direction: column;
+    gap: 27px;
+    border-top: 1px solid #d9deea;
+    box-shadow: 0 15px 20px #61101f20;
+  }
+  .mobile-contact {
+    display: block !important;
+    color: var(--blue);
+  }
+  .hero {
+    padding: 25px 6%;
+  }
+  .hero-topline {
+    font-size: 8px;
+    letter-spacing: 1.1px;
+  }
+  .hero-edition {
+    display: none;
+  }
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    min-height: 0;
+  }
+  .hero-copy {
+    padding: 37px 0 10px;
+    width: 100%;
+  }
+  .hero h1 {
+    font-size: clamp(62px, 12.5vw, 94px);
+    letter-spacing: -4.5px;
+    line-height: 1;
+  }
+  .hero-copy > p {
+    font-size: 13px;
+    margin-top: 31px;
+    margin-bottom: 23px;
+    max-width: 330px;
+  }
+  .hero-note {
+    font-size: 9px;
+    margin-top: 18px;
+  }
+  .button {
+    min-height: 52px;
+    font-size: 12px;
+  }
+  .hero-visual {
+    width: 100%;
+    height: 430px;
+    max-width: 480px;
+    margin: 25px 0 20px;
+  }
+  .photo-main {
+    height: 320px;
+    width: 78%;
+    left: 13%;
+    top: 42px;
+  }
+  .photo-small {
+    height: 180px;
+    width: 37%;
+    left: 3%;
+    bottom: 5px;
+  }
+  .orbit-label {
+    top: 6px;
+    right: 3%;
+    padding: 12px 17px;
+  }
+  .orbit-label strong {
+    font-size: 15px;
+  }
+  .orbit-label svg {
+    width: 21px;
+  }
+  .hero-sticker {
+    right: 2%;
+    bottom: 5px;
+    width: 100px;
+    height: 100px;
+  }
+  .hero-sticker span {
+    font-size: 18px;
+  }
+  .hero-sticker svg {
+    width: 17px;
+    height: 17px;
+  }
+  .visual-cross {
+    left: 0;
+    top: 20px;
+    font-size: 64px;
+  }
+  .hero-bottom {
+    font-size: 7px;
+    letter-spacing: 0.6px;
+    padding-top: 15px;
+  }
+  .hero-index {
+    display: none;
+  }
+  .motion-toggle {
+    font-size: 8px;
+    gap: 6px;
+  }
+  .hero-bottom > a {
+    gap: 7px;
+  }
+  .scroll-circle {
+    width: 24px;
+    height: 24px;
+  }
+  .marquee {
+    padding: 16px 0;
+  }
+  .marquee-track {
+    font-size: 18px;
+  }
+  .marquee-track > span > span {
+    font-size: 23px;
+    padding: 0 20px;
+  }
+  .section-pad {
+    padding: 65px 6%;
+  }
+  .section-heading {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .section-heading > p {
+    margin-top: 22px;
+    font-size: 13px;
+  }
+  .section-heading > p br {
+    display: none;
+  }
+  h2 {
+    font-size: 40px;
+    letter-spacing: -2px;
+  }
+  .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.15px;
+    margin-bottom: 20px;
+  }
+  .category-tabs {
+    margin-bottom: 22px;
+  }
+  .category-tabs button {
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    gap: 8px;
+    padding: 15px 3px;
+  }
+  .category-tabs button > span {
+    font-size: 7px;
+  }
+  .category-tabs button > svg {
+    width: 14px;
+    margin-right: 5px;
+  }
+  .category-panel {
+    grid-template-columns: 1fr;
+  }
+  .category-photo {
+    min-height: 290px;
+  }
+  .category-copy {
+    padding: 30px;
+  }
+  .category-copy h3 {
+    font-size: 32px;
+    margin-top: 28px;
+    max-width: 260px;
+  }
+  .category-copy p {
+    font-size: 13px;
+    max-width: none;
+  }
+  .category-symbol {
+    font-size: 105px;
+  }
+  .services-section {
+    padding-top: 0;
+  }
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .service-card {
+    padding: 25px;
+  }
+  .service-card-top {
+    margin-bottom: 25px;
+  }
+  .service-card p {
+    min-height: 0;
+    max-width: 320px;
+  }
+  .service-card h3 {
+    font-size: 24px;
+  }
+  .service-card-bottom {
+    margin-top: 22px;
+    padding-top: 17px;
+  }
+  .service-note {
+    font-size: 9px;
+  }
+  .manifesto {
+    height: 550px;
+  }
+  .manifesto-content {
+    padding: 66px 6%;
+  }
+  .manifesto h2 {
+    font-size: 52px;
+    letter-spacing: -3px;
+  }
+  .manifesto p {
+    font-size: 13px;
+    max-width: 290px;
+  }
+  .manifesto p br {
+    display: none;
+  }
+  .manifesto-mark {
+    font-size: 200px;
+    right: -35px;
+    top: 230px;
+    opacity: 0.22;
+  }
+  .manifesto > img {
+    object-position: 50% center;
+  }
+  .manifesto-overlay {
+    background: linear-gradient(90deg, #171b43eb, #d9273b88);
+  }
+  .visit-section {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .visit-copy h2 {
+    font-size: 39px;
+    letter-spacing: -2px;
+  }
+  .visit-copy > p {
+    font-size: 13px;
+  }
+  .visit-copy address {
+    margin-top: 28px;
+  }
+  .visit-copy address strong {
+    font-size: 11px;
+  }
+  .visit-actions {
+    gap: 20px;
+  }
+  .visit-actions > .text-link {
+    font-size: 11px;
+  }
+  .phone-line {
+    gap: 15px;
+  }
+  .location-card {
+    height: 390px;
+  }
+  .faq-section {
+    grid-template-columns: 1fr;
+    padding-top: 0;
+    gap: 30px;
+  }
+  .faq-section h2 {
+    font-size: 37px;
+  }
+  .faq-list summary {
+    font-size: 13px;
+    padding: 22px 0;
+  }
+  .faq-list p {
+    font-size: 12px;
+  }
+  .final-cta {
+    padding: 65px 6%;
+  }
+  .final-cta h2 {
+    font-size: 42px;
+    letter-spacing: -2px;
+    position: relative;
+    z-index: 1;
+  }
+  .final-cta .eyebrow {
+    font-size: 7px;
+  }
+  .cta-flower {
+    font-size: 170px;
+    right: -35px;
+    top: 110px;
+    opacity: 0.2;
+  }
+  .final-cta .button {
+    position: relative;
+    z-index: 1;
+  }
+  .footer {
+    padding: 35px 6% 80px;
+  }
+  .footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-bottom: 30px;
+  }
+  .footer-main > p {
+    font-size: 10px;
+    text-align: right;
+  }
+  .footer-main > a:not(.brand) {
+    font-size: 9px;
+    gap: 5px;
+  }
+  .footer-main > a:last-child {
+    justify-self: end;
+  }
+  .footer-bottom {
+    flex-wrap: wrap;
+    gap: 17px;
+    font-size: 8px;
+  }
+  .footer-bottom > span:first-child {
+    max-width: 75%;
+  }
+  .footer-bottom > span:last-child {
+    width: 100%;
+    font-size: 7px;
+  }
+  .floating-whatsapp {
+    width: 50px;
+    height: 50px;
+    right: 16px;
+    bottom: 16px;
+  }
+  .privacy-dialog {
+    padding: 30px 23px;
+  }
+}
+@media (max-width: 380px) {
+  .header-contact {
+    display: none;
+  }
+  .menu-toggle {
+    margin-left: auto;
+  }
+  .hero h1 {
+    font-size: 58px;
+  }
+  .hero-visual {
+    height: 370px;
+  }
+  .photo-main {
+    height: 280px;
+  }
+  .photo-small {
+    height: 155px;
+  }
+  .hero-sticker {
+    width: 85px;
+    height: 85px;
+  }
+  .hero-sticker span {
+    font-size: 16px;
+  }
+  .hero-bottom {
+    letter-spacing: 0;
+  }
+  .hero-bottom > a {
+    font-size: 6px;
+  }
+  .category-tabs button {
+    font-size: 14px;
+  }
+  .category-tabs button > span {
+    display: none;
+  }
+  .category-tabs button > svg {
+    margin-right: 2px;
+  }
+  .category-copy {
+    padding: 25px;
+  }
+  .footer .brand {
+    font-size: 23px;
+  }
+  .footer .brand-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *:before,
+  *:after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .motion-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .quick-card {
+    height: 165px;
+    padding: 20px;
+  }
+  .quick-card strong {
+    font-size: 16px;
+  }
+  .quick-card > svg {
+    margin-bottom: 10px;
+  }
+  .category-art {
+    min-height: 290px;
+  }
+  .category-art > strong {
+    font-size: 96px;
+  }
+  .art-icon {
+    width: 88px;
+    height: 88px;
+  }
+  .hours-card {
+    max-width: none;
+  }
+}
