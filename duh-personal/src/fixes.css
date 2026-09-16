@@ -1,0 +1,33 @@
+/* Keep text-led seals contained at every viewport size. */
+.reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.offer-badge {
+  align-content: center;
+  justify-items: center;
+  overflow: hidden;
+  padding: 16px;
+}
+
+.offer-badge span {
+  display: block;
+  max-width: 96px;
+  font-size: 38px;
+  line-height: 0.76;
+  overflow-wrap: anywhere;
+}
+
+.offer-badge small {
+  display: block;
+  margin-top: 8px;
+  font-size: 7px;
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 760px) {
+  .offer-badge span { font-size: 32px; }
+  .offer-badge small { font-size: 6px; }
+}
