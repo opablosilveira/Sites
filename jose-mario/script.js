@@ -37,32 +37,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('navMenu');
   if (mobileToggle && navMenu) {
     mobileToggle.addEventListener('click', () => {
-      const isOpen = navMenu.classList.contains('menu-open');
-      if (isOpen) {
-        navMenu.classList.remove('menu-open');
-        navMenu.style.display = 'none';
-      } else {
-        navMenu.classList.add('menu-open');
-        navMenu.style.display = 'flex';
-        navMenu.style.flexDirection = 'column';
-        navMenu.style.position = 'absolute';
-        navMenu.style.top = '100%';
-        navMenu.style.left = '0';
-        navMenu.style.width = '100%';
-        navMenu.style.background = 'rgba(10, 10, 14, 0.98)';
-        navMenu.style.padding = '1.8rem';
-        navMenu.style.borderBottom = '1px solid rgba(0, 102, 255, 0.35)';
-        navMenu.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.8)';
-      }
+      const isOpen = navMenu.classList.toggle('menu-open');
+      mobileToggle.classList.toggle('active', isOpen);
     });
 
     const navLinks = navMenu.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
-        if (window.innerWidth <= 768) {
-          navMenu.classList.remove('menu-open');
-          navMenu.style.display = 'none';
-        }
+        navMenu.classList.remove('menu-open');
+        mobileToggle.classList.remove('active');
       });
     });
   }
@@ -159,5 +142,21 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.transform = '';
       });
     });
+  }
+
+  // 7. Sticky Footer CTA no Mobile ao Rolar
+  const stickyBar = document.getElementById('mobileStickyBar');
+  if (stickyBar) {
+    window.addEventListener('scroll', () => {
+      if (window.innerWidth <= 768) {
+        if (window.scrollY > 400) {
+          stickyBar.classList.add('visible');
+          document.body.classList.add('has-sticky-bar');
+        } else {
+          stickyBar.classList.remove('visible');
+          document.body.classList.remove('has-sticky-bar');
+        }
+      }
+    }, { passive: true });
   }
 });
