@@ -295,7 +295,7 @@ h1, h2, h3, h4 {
   font-size: 0.65rem;
   font-weight: 800;
   letter-spacing: 0.2em;
-  color: var(--accent-orange);
+  color: var(--accent-blue);
 }
 
 .nav-menu {
@@ -346,7 +346,7 @@ h1, h2, h3, h4 {
   right: -50px;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(255, 106, 0, 0.18) 0%, rgba(8, 8, 10, 0) 70%);
+  background: radial-gradient(circle, rgba(0, 102, 255, 0.25) 0%, rgba(8, 8, 10, 0) 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -393,8 +393,8 @@ h1, h2, h3, h4 {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: rgba(255, 106, 0, 0.18);
-  color: var(--accent-orange);
+  background: rgba(0, 102, 255, 0.18);
+  color: var(--accent-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -608,7 +608,7 @@ h1, h2, h3, h4 {
 .stat-unit {
   font-family: var(--font-display);
   font-size: 1.4rem;
-  color: var(--accent-orange);
+  color: var(--accent-blue);
   margin-left: 0.3rem;
 }
 
@@ -692,7 +692,7 @@ section {
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.1em;
-  color: var(--accent-orange);
+  color: var(--accent-blue);
   margin-bottom: 0.4rem;
 }
 
@@ -792,7 +792,7 @@ section {
   content: '>';
   position: absolute;
   left: 0;
-  color: var(--accent-orange);
+  color: var(--accent-blue);
   font-weight: 800;
   font-size: 0.85rem;
 }
@@ -845,8 +845,8 @@ section {
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: rgba(255, 106, 0, 0.1);
-  color: var(--accent-orange);
+  background: rgba(0, 102, 255, 0.15);
+  color: var(--accent-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -942,13 +942,14 @@ section {
 
 .step-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(255, 106, 0, 0.3);
+  border-color: rgba(0, 102, 255, 0.5);
+  box-shadow: 0 12px 32px rgba(0, 102, 255, 0.18);
 }
 
 .step-card.highlight-step {
-  border-color: var(--accent-orange);
-  background: rgba(255, 106, 0, 0.04);
-  box-shadow: 0 10px 30px rgba(255, 106, 0, 0.15);
+  border-color: var(--accent-blue);
+  background: rgba(0, 102, 255, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 102, 255, 0.2);
 }
 
 .step-badge {
@@ -961,15 +962,15 @@ section {
 }
 
 .step-badge.special {
-  color: var(--accent-orange);
+  color: var(--accent-blue);
 }
 
 .step-icon-wrap {
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: rgba(255, 106, 0, 0.1);
-  color: var(--accent-orange);
+  background: rgba(0, 102, 255, 0.15);
+  color: var(--accent-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1017,9 +1018,9 @@ section {
 }
 
 .result-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(255, 106, 0, 0.35);
-  box-shadow: var(--shadow-card);
+  transform: translateY(-4px);
+  border-color: rgba(0, 102, 255, 0.55);
+  box-shadow: 0 16px 40px rgba(0, 102, 255, 0.22), var(--shadow-card);
 }
 
 .result-image-box {
@@ -1046,7 +1047,7 @@ section {
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.1em;
-  color: var(--accent-orange);
+  color: var(--accent-blue);
   margin-bottom: 0.5rem;
 }
 
@@ -1102,16 +1103,17 @@ section {
 }
 
 .included-card:hover {
-  border-color: rgba(255, 106, 0, 0.3);
-  transform: translateY(-2px);
+  border-color: rgba(0, 102, 255, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 102, 255, 0.16);
 }
 
 .inc-icon-wrap {
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: rgba(255, 106, 0, 0.08);
-  color: var(--accent-orange);
+  background: rgba(0, 102, 255, 0.15);
+  color: var(--accent-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1321,7 +1323,7 @@ section {
 .amount-inst {
   font-family: var(--font-display);
   font-size: 2.8rem;
-  color: var(--accent-orange);
+  color: var(--accent-blue);
   line-height: 1;
 }
 
@@ -1440,7 +1442,8 @@ section {
 }
 
 .faq-item.active {
-  border-color: rgba(255, 106, 0, 0.35);
+  border-color: rgba(0, 102, 255, 0.5);
+  box-shadow: 0 8px 24px rgba(0, 102, 255, 0.14);
 }
 
 .faq-question {
@@ -1463,7 +1466,7 @@ section {
 .faq-icon {
   font-size: 1.4rem;
   font-weight: 300;
-  color: var(--accent-orange);
+  color: var(--accent-blue);
   transition: transform 0.25s ease;
 }
 
@@ -1654,7 +1657,8 @@ section {
   }
 
   .results-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 
   .included-grid {

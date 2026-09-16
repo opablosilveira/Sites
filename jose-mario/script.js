@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.style.width = '100%';
         navMenu.style.background = 'rgba(10, 10, 14, 0.98)';
         navMenu.style.padding = '1.8rem';
-        navMenu.style.borderBottom = '1px solid rgba(255, 106, 0, 0.3)';
+        navMenu.style.borderBottom = '1px solid rgba(0, 102, 255, 0.35)';
         navMenu.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.8)';
       }
     });
