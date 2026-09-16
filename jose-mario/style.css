@@ -1239,9 +1239,11 @@ section {
   color: #10b981;
 }
 
-/* Seção de Planos e Preços */
+/* Seção de Consultoria e Formatos de Acompanhamento */
 .pricing-section {
   background: #08080a;
+  padding: 5.5rem 0;
+  scroll-margin-top: 90px;
 }
 
 .pricing-grid {
