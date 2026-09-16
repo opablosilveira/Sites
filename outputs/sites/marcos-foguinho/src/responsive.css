@@ -107,6 +107,11 @@
     margin-inline: auto;
   }
 
+  .reel-featured-card {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
   .proof-gallery {
     grid-template-columns: 1fr;
   }

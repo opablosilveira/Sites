@@ -22,7 +22,13 @@ test.describe('Landing Page — Marcos Fonseca (@foguinhobjj)', () => {
     await expect(heroTitle).toBeVisible();
     await expect(heroTitle).toContainText('Do seu ponto de partida ao');
 
-    // 3. Imagens carregadas sem erro
+    // Selo 90 Dias
+    const sealBadge = page.locator('.seal-badge');
+    await expect(sealBadge).toBeVisible();
+    await expect(sealBadge).toContainText('90');
+    await expect(sealBadge).toContainText('Dias');
+
+    // 3. Imagens carregadas sem erro (com suporte a lazy loading)
     const images = page.locator('img');
     const imageCount = await images.count();
     expect(imageCount).toBeGreaterThan(0);
@@ -30,7 +36,6 @@ test.describe('Landing Page — Marcos Fonseca (@foguinhobjj)', () => {
     for (let i = 0; i < imageCount; i++) {
       const img = images.nth(i);
       await img.scrollIntoViewIfNeeded();
-      // Aguardar carregar caso seja lazy
       await img.evaluate(async (el: HTMLImageElement) => {
         if (!el.complete) {
           await new Promise((resolve) => {
@@ -50,12 +55,12 @@ test.describe('Landing Page — Marcos Fonseca (@foguinhobjj)', () => {
   test('Validação de Links Externos e CTAs (Checkout, WhatsApp, Instagram)', async ({ page }) => {
     await page.goto('/');
 
-    // CTA de Checkout do Desafio
+    // CTA de Checkout do Desafio 90 Dias
     const checkoutCta = page.locator('#cta-checkout-desafio');
     await expect(checkoutCta).toBeVisible();
     await expect(checkoutCta).toHaveAttribute('target', '_blank');
     await expect(checkoutCta).toHaveAttribute('rel', 'noopener noreferrer');
-    await expect(checkoutCta).toHaveAttribute('href', /checkout\.exemplo\.com/);
+    await expect(checkoutCta).toHaveAttribute('href', /checkout\.exemplo\.com\/desafio-90-dias/);
 
     // CTA da Consultoria para WhatsApp
     const whatsappConsultingCta = page.locator('#cta-whatsapp-consultoria');
@@ -74,6 +79,12 @@ test.describe('Landing Page — Marcos Fonseca (@foguinhobjj)', () => {
     await expect(instagramLink).toBeVisible();
     await expect(instagramLink).toHaveAttribute('href', 'https://www.instagram.com/foguinhobjj/');
     await expect(instagramLink).toHaveAttribute('target', '_blank');
+
+    // Link do Reels oficial do Desafio 90 Dias na Prova Social
+    const reelCta = page.locator('#cta-reel-instagram');
+    await expect(reelCta).toBeVisible();
+    await expect(reelCta).toHaveAttribute('href', 'https://www.instagram.com/p/DY-75D2RQYV/');
+    await expect(reelCta).toHaveAttribute('target', '_blank');
   });
 
   test('Interatividade do FAQ (details / summary)', async ({ page }) => {
@@ -143,7 +154,6 @@ test.describe('Landing Page — Marcos Fonseca (@foguinhobjj)', () => {
       await page.setViewportSize({ width: vp.width, height: vp.height });
       await page.goto('/');
 
-      // Verifica se o scrollWidth do documento é menor ou igual à largura da viewport + tolerância de 1px
       const hasOverflow = await page.evaluate(() => {
         return document.documentElement.scrollWidth > window.innerWidth;
       });

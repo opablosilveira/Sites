@@ -43,6 +43,10 @@ export interface SiteConfig {
       features: string[];
     };
   };
+  reels: {
+    challenge90DaysUrl: string;
+    challenge90DaysTitle: string;
+  };
 }
 
 export const SITE_CONFIG: SiteConfig = {
@@ -65,11 +69,11 @@ export const SITE_CONFIG: SiteConfig = {
       "Olá Marcos! Quero me candidatar para a Consultoria Individualizada (Brasil & Exterior). Como funciona a aplicação?"
     )}`,
     challengeUrl: `https://wa.me/5598988888888?text=${encodeURIComponent(
-      "Olá Marcos! Quero garantir minha vaga no Desafio 60 Dias com início imediato."
+      "Olá Marcos! Quero garantir minha vaga no Desafio 90 Dias com início imediato."
     )}`,
   },
   checkout: {
-    challengeUrl: "https://checkout.exemplo.com/desafio-60-dias",
+    challengeUrl: "https://checkout.exemplo.com/desafio-90-dias",
     guaranteeDays: 7,
   },
   authority: {
@@ -80,20 +84,20 @@ export const SITE_CONFIG: SiteConfig = {
   },
   offers: {
     challenge: {
-      name: "Desafio 60 Dias",
-      duration: "60 Dias de Acompanhamento",
+      name: "Desafio 90 Dias",
+      duration: "90 Dias (12 Semanas de Acompanhamento)",
       tag: "TRANSFORMAÇÃO ACELERADA",
       description:
-        "Protocolo intensivo com treino periodizado, direcionamento alimentar estratégico e rotina estruturada para você queimar gordura visceral e construir densidade muscular em 8 semanas.",
+        "Protocolo intensivo de 12 semanas com treino periodizado, direcionamento alimentar estratégico e rotina estruturada para você queimar gordura visceral e construir densidade muscular máxima.",
       price: "R$ 197",
       priceInstallments: "12x de R$ 19,70",
       features: [
-        "Planilha de treinos focada em queima e hipertrofia",
+        "Planilha completa de 90 dias focada em queima e hipertrofia",
         "Divisões adaptáveis para academia ou treino em casa",
-        "Guia nutricional prático sem passar fome",
-        "Comunidade exclusiva de alunos com suporte",
-        "Vídeos de execução correta de cada movimento",
-        "Acesso imediato à plataforma de alunos",
+        "Guia nutricional prático sem passar fome nem dietas malucas",
+        "Comunidade exclusiva de alunos com suporte contínuo",
+        "Vídeos demonstrativos de execução correta de cada exercício",
+        "Acesso imediato à plataforma de treinamento",
       ],
     },
     consulting: {
@@ -106,10 +110,14 @@ export const SITE_CONFIG: SiteConfig = {
         "Avaliação física completa e anamnese profunda",
         "Periodização sob medida (ganho seco ou secagem extrema)",
         "Adaptação para fuso horário de alunos no exterior",
-        "Ajustes quinzenais de carga, volume e estímulo",
+        "Ajustes periódicos de carga, volume e estímulo muscular",
         "Canal direto de WhatsApp para tirar dúvidas diárias",
         "Estratégia para atletas e praticantes dedicados",
       ],
     },
+  },
+  reels: {
+    challenge90DaysUrl: "https://www.instagram.com/p/DY-75D2RQYV/",
+    challenge90DaysTitle: "Final do Desafio 90 Dias — Antes e Depois",
   },
 };

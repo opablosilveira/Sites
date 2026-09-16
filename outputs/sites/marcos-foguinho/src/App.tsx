@@ -126,14 +126,14 @@ export const App: React.FC = () => {
 
           <div className="header-actions">
             <a
-              href={SITE_CONFIG.whatsapp.consultingUrl}
+              href={SITE_CONFIG.whatsapp.challengeUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="header-cta"
               id="header-cta-btn"
             >
-              <MessageCircle size={15} />
-              <span>Vagas Consultoria</span>
+              <Flame size={15} />
+              <span>Desafio 90 Dias</span>
             </a>
 
             <button
@@ -158,13 +158,13 @@ export const App: React.FC = () => {
         <section className="hero" aria-labelledby="hero-title">
           <div className="section-container hero-grid">
             <div className="hero-content">
-              <span className="eyebrow">Consultoria &amp; Alta Performance</span>
+              <span className="eyebrow">Preparação &amp; Alta Performance</span>
               <h1 id="hero-title">
                 Do seu ponto de partida ao <em>físico que você busca</em>
               </h1>
               <p className="hero-lead">
                 O método validado que já transformou centenas de físicos no Brasil e no exterior.
-                Da queima acelerada de gordura à preparação de atletas campeões Overall NPC.
+                Da queima acelerada de gordura no Desafio 90 Dias à preparação de atletas campeões Overall NPC.
               </p>
 
               <div className="hero-buttons">
@@ -173,7 +173,7 @@ export const App: React.FC = () => {
                   className="btn btn-fire"
                   id="hero-primary-cta"
                 >
-                  <span>Conhecer o Desafio 60 Dias</span>
+                  <span>Conhecer o Desafio 90 Dias</span>
                   <ArrowRight size={16} />
                 </a>
 
@@ -221,16 +221,16 @@ export const App: React.FC = () => {
                 </div>
               </div>
 
-              {/* Selo 60 Dias */}
-              <div className="seal-badge" aria-label="Desafio 60 Dias">
-                <strong>60</strong>
+              {/* Selo 90 Dias */}
+              <div className="seal-badge" aria-label="Desafio 90 Dias">
+                <strong>90</strong>
                 <span>Dias</span>
               </div>
 
               {/* Chip Status */}
               <div className="live-chip">
                 <span className="live-dot" />
-                <span>Vagas Abertas • 2026</span>
+                <span>Turma Aberta • 2026</span>
               </div>
             </div>
           </div>
@@ -245,7 +245,7 @@ export const App: React.FC = () => {
             <b>•</b>
             <span>DEFINIÇÃO ACELERADA</span>
             <b>•</b>
-            <span>DESAFIO 60 DIAS</span>
+            <span>DESAFIO 90 DIAS</span>
             <b>•</b>
             <span>DISCIPLINA DO JIU-JITSU</span>
             <b>•</b>
@@ -259,7 +259,7 @@ export const App: React.FC = () => {
             <b>•</b>
             <span>DEFINIÇÃO ACELERADA</span>
             <b>•</b>
-            <span>DESAFIO 60 DIAS</span>
+            <span>DESAFIO 90 DIAS</span>
             <b>•</b>
             <span>DISCIPLINA DO JIU-JITSU</span>
             <b>•</b>
@@ -400,14 +400,14 @@ export const App: React.FC = () => {
               <span className="eyebrow">Programas &amp; Acompanhamento</span>
               <h2 id="offers-title">Escolha o formato ideal para a sua transformação</h2>
               <p>
-                Seja para dar uma virada de chave imediata com o Desafio 60 Dias ou receber acompanhamento
+                Seja para entrar na maior batalha de evolução física com o Desafio 90 Dias ou receber acompanhamento
                 personalizado e sob medida na Consultoria Individual Online.
               </p>
             </div>
 
             <div className="offers-grid">
-              {/* Card 1: Desafio 60 Dias */}
-              <div className="offer-card offer-card-challenge" id="card-desafio-60">
+              {/* Card 1: Desafio 90 Dias */}
+              <div className="offer-card offer-card-challenge" id="card-desafio-90">
                 <div className="offer-tag">
                   <Flame size={14} />
                   <span>{SITE_CONFIG.offers.challenge.tag}</span>
@@ -439,7 +439,7 @@ export const App: React.FC = () => {
                   className="btn btn-fire"
                   id="cta-checkout-desafio"
                 >
-                  <span>Garantir Vaga no Desafio</span>
+                  <span>Garantir Vaga no Desafio 90 Dias</span>
                   <ArrowRight size={16} />
                 </a>
               </div>
@@ -468,7 +468,7 @@ export const App: React.FC = () => {
                     Vagas Limitadas
                   </div>
                   <span className="offer-price-installments">
-                    Análise de perfil via WhatsApp com Marcos Fonseca
+                    Análise de perfil e aplicação direta no WhatsApp com Marcos Fonseca
                   </span>
                 </div>
 
@@ -543,63 +543,156 @@ export const App: React.FC = () => {
         </section>
 
         {/* ============================================================
-            8. PROVA SOCIAL
+            8. PROVA SOCIAL — FOTOS REAIS DO REEL E DESTAQUES
             ============================================================ */}
         <section id="resultados" className="proof-section" aria-labelledby="proof-title">
-          <div className="section-container proof-grid reveal">
-            <div className="proof-content">
-              <span className="eyebrow">Provas &amp; Evolução</span>
-              <h2 id="proof-title">Físicos construídos com método e constância</h2>
+          <div className="section-container reveal">
+            {/* Cabeçalho da Prova Social */}
+            <div className="proof-header-block">
+              <span className="eyebrow">Provas &amp; Evolução Real</span>
+              <h2 id="proof-title">Físicos transformados com método, constância e ciência</h2>
               <p>
-                Não existem atalhos mágicos. O que existe é a combinação entre a prescrição correta de treinos,
-                ajuste de intensidade e um acompanhamento que não deixa você desanimar no meio do caminho.
+                Não existem atalhos mágicos nem filtros de internet. O que existe é a combinação entre prescrição
+                biomecânica correta, intensidade calibrada e acompanhamento que não deixa você desanimar no caminho.
               </p>
 
               <div className="proof-badges">
                 <span className="proof-badge-item">
-                  <Award size={16} /> Troféu Overall NPC Men's Physique
+                  <Award size={16} /> Finalistas do Desafio 90 Dias
                 </span>
                 <span className="proof-badge-item">
-                  <Users size={16} /> Turmas do Desafio 60 Dias
+                  <Users size={16} /> Alunos de Consultoria Online
                 </span>
                 <span className="proof-badge-item">
-                  <ShieldCheck size={16} /> Alunos no Brasil e Exterior
+                  <ShieldCheck size={16} /> Troféu Overall NPC Men's Physique
                 </span>
               </div>
+            </div>
+
+            {/* Destaque Principal: O Reels Oficial do Desafio 90 Dias (Antes e Depois) */}
+            <div className="reel-featured-card" id="reel-desafio-90-spotlight">
+              <div className="reel-media-wrapper">
+                <img
+                  src="/images/marcos-desafio-90.jpg"
+                  alt="Antes e Depois real do Desafio 90 Dias — Arthur x Matheus"
+                  width="454"
+                  height="680"
+                  loading="lazy"
+                />
+                <div className="reel-badge-top">
+                  <Flame size={14} style={{ color: 'var(--fire)' }} />
+                  <span>CASO REAL • DESAFIO 90 DIAS</span>
+                </div>
+                <div className="reel-badge-bottom">
+                  <span>90 Dias de Evolução • Frente e Costas</span>
+                </div>
+              </div>
+
+              <div className="reel-content-wrapper">
+                <div className="reel-eyebrow">
+                  <InstagramIcon size={16} />
+                  <span>Reels Oficial no Instagram @foguinhobjj</span>
+                </div>
+                <h3>Final do Desafio 90 Dias: Transformação Completa</h3>
+                <p>
+                  Assista à evolução impressionante dos finalistas que completaram os 90 dias de protocolo intensivo.
+                  Alunos reais eliminando a camada de gordura abdominal e desenvolvendo densidade muscular nas costas e peitoral,
+                  com avaliação e votação aberta de toda a comunidade.
+                </p>
+
+                <div className="reel-highlights">
+                  <div className="reel-highlight-item">
+                    <CheckCircle2 size={18} />
+                    <span><strong>12 Semanas:</strong> protocolo estruturado de queima e hipertrofia</span>
+                  </div>
+                  <div className="reel-highlight-item">
+                    <CheckCircle2 size={18} />
+                    <span><strong>Antes e Depois Real:</strong> sem filtros ou poses enganosas</span>
+                  </div>
+                  <div className="reel-highlight-item">
+                    <CheckCircle2 size={18} />
+                    <span><strong>Votação da Comunidade:</strong> milhares de pessoas acompanhando</span>
+                  </div>
+                </div>
+
+                <div className="reel-actions">
+                  <a
+                    href={SITE_CONFIG.reels.challenge90DaysUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-fire"
+                    id="cta-reel-instagram"
+                  >
+                    <InstagramIcon size={18} />
+                    <span>Assistir Reel do Antes e Depois</span>
+                    <ExternalLink size={16} />
+                  </a>
+
+                  <a
+                    href="#ofertas"
+                    className="btn btn-outline-light"
+                    id="cta-reel-to-offer"
+                  >
+                    <span>Entrar no Desafio 90 Dias</span>
+                    <ArrowRight size={16} />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Galeria Complementar de Resultados */}
+            <div className="proof-gallery-title">
+              <h3>Mais transformações reais com o método de Marcos Fonseca</h3>
             </div>
 
             <div className="proof-gallery">
+              {/* Card 1: Aluno Jefferson */}
               <div className="proof-card">
                 <img
-                  src="/images/marcos-desafio.jpg"
-                  alt="Final do Desafio 60 Dias com alunos e Marcos Fonseca"
+                  src="/images/marcos-results-jefferson.jpg"
+                  alt="Evolução física do aluno Jefferson Mano"
+                  width="476"
+                  height="585"
+                  loading="lazy"
+                />
+                <div className="proof-caption">
+                  <strong>Aluno @jefferson.mano30:</strong> eliminação expressiva de gordura abdominal e construção do 6-pack.
+                </div>
+              </div>
+
+              {/* Card 2: Aluno Nakamura Consultoria Online */}
+              <div className="proof-card">
+                <img
+                  src="/images/marcos-results-nakamura.jpg"
+                  alt="Aluno de Consultoria Online Direto de SP"
+                  width="476"
+                  height="665"
+                  loading="lazy"
+                />
+                <div className="proof-caption">
+                  <strong>Consultoria Online (@nakamura_opp):</strong> resultado direto de SP com 30 dias de acompanhamento individual.
+                </div>
+              </div>
+
+              {/* Card 3: Equipe e Treinador */}
+              <div className="proof-card">
+                <img
+                  src="/images/marcos-team-gym.jpg"
+                  alt="Marcos Fonseca com equipe e atletas em centro de treinamento"
                   width="600"
-                  height="300"
+                  height="450"
                   loading="lazy"
                 />
                 <div className="proof-caption">
-                  <strong>Turma do Desafio 60 Dias:</strong> evolução de alunos com foco em definição e saúde.
+                  <strong>Ambiente de Alta Performance:</strong> metodologia que prepara tanto iniciantes quanto atletas campeões.
                 </div>
               </div>
-
-              <div className="proof-card">
-                <img
-                  src="/images/marcos-results.jpg"
-                  alt="Evolução física de aluno da consultoria"
-                  width="320"
-                  height="390"
-                  loading="lazy"
-                />
-                <div className="proof-caption">
-                  <strong>Resultados Reais:</strong> redução expressiva de percentual de gordura e ganho muscular.
-                </div>
-              </div>
-
-              <p className="disclaimer-note">
-                * Os resultados são individuais e variam conforme o ponto de partida, frequência de treinos,
-                alimentação, descanso e aplicação rigorosa do método.
-              </p>
             </div>
+
+            <p className="disclaimer-note">
+              * Os resultados são individuais e variam conforme o ponto de partida, frequência de treinos,
+              alimentação, descanso e aplicação rigorosa do método.
+            </p>
           </div>
         </section>
 
@@ -627,7 +720,7 @@ export const App: React.FC = () => {
                   </li>
                   <li>
                     <CheckCircle2 size={20} />
-                    <span>Está disposto a seguir o plano por pelo menos 60 dias para construir hábitos definitivos.</span>
+                    <span>Está disposto a seguir o plano por pelo menos 90 dias para construir hábitos e músculos definitivos.</span>
                   </li>
                   <li>
                     <CheckCircle2 size={20} />
@@ -671,7 +764,7 @@ export const App: React.FC = () => {
                 <span className="eyebrow">Decisão &amp; Compromisso</span>
                 <h2 id="final-title">Seu novo físico começa na sua próxima decisão</h2>
                 <p>
-                  Não deixe para a próxima segunda-feira. Entre hoje no <strong>Desafio 60 Dias</strong> ou
+                  Não deixe para a próxima segunda-feira. Entre hoje no <strong>Desafio 90 Dias</strong> ou
                   aplique para a <strong>Consultoria Individual</strong> e receba a estratégia exata para atingir seu ápice físico.
                 </p>
               </div>
@@ -684,7 +777,7 @@ export const App: React.FC = () => {
                   className="btn btn-fire"
                   id="final-cta-checkout"
                 >
-                  <span>Garantir Desafio 60 Dias</span>
+                  <span>Garantir Desafio 90 Dias</span>
                   <ArrowRight size={16} />
                 </a>
 
@@ -718,7 +811,7 @@ export const App: React.FC = () => {
               <span className="eyebrow">Tire Suas Dúvidas</span>
               <h2 id="faq-title">Perguntas Frequentes</h2>
               <p>
-                Veja as respostas para as principais dúvidas sobre o Desafio 60 Dias e a Consultoria Individual com Marcos Fonseca.
+                Veja as respostas para as principais dúvidas sobre o Desafio 90 Dias e a Consultoria Individual com Marcos Fonseca.
               </p>
             </div>
 
@@ -729,7 +822,7 @@ export const App: React.FC = () => {
                   <ChevronRight className="faq-icon" size={22} />
                 </summary>
                 <p className="faq-answer">
-                  Você pode fazer tanto na academia quanto em casa! No Desafio 60 Dias temos adaptações completas, e na Consultoria Individual o treino é montado 100% sob medida para os equipamentos ou espaço que você tem à disposição.
+                  Você pode fazer tanto na academia quanto em casa! No Desafio 90 Dias temos adaptações completas, e na Consultoria Individual o treino é montado 100% sob medida para os equipamentos ou espaço que você tem à disposição.
                 </p>
               </details>
 
@@ -745,11 +838,11 @@ export const App: React.FC = () => {
 
               <details className="faq-item">
                 <summary className="faq-summary">
-                  <span>Qual a diferença entre o Desafio 60 Dias e a Consultoria?</span>
+                  <span>Qual a diferença entre o Desafio 90 Dias e a Consultoria?</span>
                   <ChevronRight className="faq-icon" size={22} />
                 </summary>
                 <p className="faq-answer">
-                  O Desafio 60 Dias é um protocolo prático e intensivo em formato de programa estruturado com suporte em grupo e início imediato. Já a Consultoria é um acompanhamento individual direto com Marcos Fonseca, com avaliação biomecânica, anamnese e ajustes quinzenais personalizados.
+                  O Desafio 90 Dias é um protocolo prático e intensivo de 12 semanas em formato de programa estruturado com suporte em grupo e premiações para as maiores evoluções. Já a Consultoria é um acompanhamento individual direto com Marcos Fonseca, com avaliação biomecânica, anamnese e ajustes periódicos personalizados.
                 </p>
               </details>
 
@@ -759,7 +852,7 @@ export const App: React.FC = () => {
                   <ChevronRight className="faq-icon" size={22} />
                 </summary>
                 <p className="faq-answer">
-                  Com certeza! Marcos atende diversos alunos nos Estados Unidos, Europa e outros países, adaptando horários, métricas e ingredientes da rotina ao país onde você reside.
+                  Com certeza! Marcos atende diversos alunos nos Estados Unidos, Europa e outros países, adaptando horários, métricas e rotina alimentar ao país onde você reside.
                 </p>
               </details>
 
@@ -769,7 +862,7 @@ export const App: React.FC = () => {
                   <ChevronRight className="faq-icon" size={22} />
                 </summary>
                 <p className="faq-answer">
-                  Garantimos a entrega de um método validado e científico. No entanto, os resultados físicos são individuais e dependem da frequência dos treinos, alimentação, sono e adesão de cada aluno. Você também conta com nossa garantia incondicional de 7 dias caso sinta que o programa não é para você.
+                  Garantimos a entrega de um método validado e comprovado. No entanto, os resultados físicos são individuais e dependem da frequência dos treinos, alimentação, sono e adesão de cada aluno. Você também conta com nossa garantia incondicional de 7 dias caso sinta que o programa não é para você.
                 </p>
               </details>
 
@@ -779,7 +872,7 @@ export const App: React.FC = () => {
                   <ChevronRight className="faq-icon" size={22} />
                 </summary>
                 <p className="faq-answer">
-                  Para o Desafio 60 Dias, o acesso é liberado instantaneamente por e-mail após a aprovação do pagamento. Para a Consultoria, o contato é feito diretamente pelo WhatsApp de Marcos Fonseca para dar início à sua anamnese.
+                  Para o Desafio 90 Dias, o acesso é liberado instantaneamente por e-mail após a aprovação do pagamento. Para a Consultoria, o contato é feito diretamente pelo WhatsApp de Marcos Fonseca para dar início à sua anamnese.
                 </p>
               </details>
             </div>
