@@ -186,6 +186,7 @@ h1, h2, h3, h4 {
   opacity: 0.35;
   filter: blur(10px);
   transition: opacity 0.3s ease;
+  animation: ctaGlowPulse 3.5s ease-in-out infinite;
 }
 
 .btn-glow:hover::after {
@@ -349,6 +350,7 @@ h1, h2, h3, h4 {
   background: radial-gradient(circle, rgba(0, 102, 255, 0.25) 0%, rgba(8, 8, 10, 0) 70%);
   pointer-events: none;
   z-index: 0;
+  animation: ambientBreathe 6s ease-in-out infinite;
 }
 
 .hero-grid {
@@ -1746,5 +1748,188 @@ section {
   .whatsapp-icon {
     width: 28px;
     height: 28px;
+  }
+}
+
+
+/* ==========================================================================
+   ANIMAÇÕES E ELEMENTOS CINEMATOGRÁFICOS
+   ========================================================================== */
+
+/* 1. Badge Circular Rotativa de Autoridade */
+.rotating-badge-container {
+  position: absolute;
+  top: -28px;
+  right: -24px;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.rotating-badge-svg {
+  width: 100%;
+  height: 100%;
+  animation: spinBadge 16s linear infinite;
+  transform-origin: center center;
+}
+
+.rotating-badge-text {
+  font-family: var(--font-heading);
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  fill: #ffffff;
+  text-transform: uppercase;
+}
+
+.rotating-badge-core {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: rgba(8, 8, 12, 0.95);
+  border: 2px solid var(--accent-blue);
+  box-shadow: 0 0 24px rgba(0, 102, 255, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-blue-light);
+}
+
+.badge-core-icon {
+  width: 24px;
+  height: 24px;
+}
+
+@keyframes spinBadge {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 2. Letreiro Infinito (Infinite Marquee Ticker) */
+.marquee-strip {
+  overflow: hidden;
+  white-space: nowrap;
+  background: rgba(0, 102, 255, 0.05);
+  border-top: 1px solid rgba(0, 102, 255, 0.2);
+  border-bottom: 1px solid rgba(0, 102, 255, 0.2);
+  padding: 0.85rem 0;
+  position: relative;
+  user-select: none;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeTrack 28s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: 0.14em;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  padding-right: 1.8rem;
+}
+
+.marquee-dot {
+  color: var(--accent-blue);
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+@keyframes marqueeTrack {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* 3. Ambient Breathing & CTA Glow */
+@keyframes ambientBreathe {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  50% {
+    transform: scale(1.16);
+    opacity: 1;
+  }
+}
+
+@keyframes ctaGlowPulse {
+  0%, 100% {
+    opacity: 0.35;
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 0.75;
+    filter: blur(16px);
+  }
+}
+
+/* 4. Scroll Reveal com Transições Suaves */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-item.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 5. Efeito 3D Tilt */
+.tilt-card {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@media (max-width: 768px) {
+  .rotating-badge-container {
+    width: 105px;
+    height: 105px;
+    top: -16px;
+    right: -10px;
+  }
+
+  .rotating-badge-text {
+    font-size: 11px;
+  }
+
+  .rotating-badge-core {
+    width: 40px;
+    height: 40px;
+  }
+
+  .badge-core-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .marquee-content {
+    font-size: 0.95rem;
+    gap: 1.2rem;
+    padding-right: 1.2rem;
   }
 }

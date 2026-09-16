@@ -121,6 +121,25 @@
 
         <!-- Coluna Direita: Imagem de José Mário -->
         <div class="hero-visual">
+          <!-- Selo Circular Rotativo de Autoridade -->
+          <div class="rotating-badge-container" aria-hidden="true">
+            <svg class="rotating-badge-svg" viewBox="0 0 160 160">
+              <defs>
+                <path id="badgeCircle" d="M 80, 80 m -56, 0 a 56,56 0 1,1 112,0 a 56,56 0 1,1 -112,0" />
+              </defs>
+              <text class="rotating-badge-text">
+                <textPath href="#badgeCircle" startOffset="0%">
+                  JOSE MARIO • ATLETA IFBB PRO • CONSULTORIA ONLINE • 
+                </textPath>
+              </text>
+            </svg>
+            <div class="rotating-badge-core">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="badge-core-icon">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+          </div>
+
           <div class="hero-image-card">
             <img src="assets/images/photo-08.jpg" alt="José Mário, atleta profissional IFBB e treinador" class="hero-main-photo">
             
@@ -149,11 +168,45 @@
       </div>
     </section>
 
+    <!-- Letreiro Infinito de Impacto (Marquee Ticker) -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>BIOMECÂNICA APLICADA</span>
+          <span class="marquee-dot">•</span>
+          <span>DIVISÃO INTELIGENTE DE GLÚTEOS</span>
+          <span class="marquee-dot">•</span>
+          <span>SEM FICHAS DE GAVETA</span>
+          <span class="marquee-dot">•</span>
+          <span>HIPERTROFIA FEMININA</span>
+          <span class="marquee-dot">•</span>
+          <span>CONSULTORIA IFBB PRO</span>
+          <span class="marquee-dot">•</span>
+          <span>CORREÇÃO EM VÍDEO</span>
+          <span class="marquee-dot">•</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span>BIOMECÂNICA APLICADA</span>
+          <span class="marquee-dot">•</span>
+          <span>DIVISÃO INTELIGENTE DE GLÚTEOS</span>
+          <span class="marquee-dot">•</span>
+          <span>SEM FICHAS DE GAVETA</span>
+          <span class="marquee-dot">•</span>
+          <span>HIPERTROFIA FEMININA</span>
+          <span class="marquee-dot">•</span>
+          <span>CONSULTORIA IFBB PRO</span>
+          <span class="marquee-dot">•</span>
+          <span>CORREÇÃO EM VÍDEO</span>
+          <span class="marquee-dot">•</span>
+        </div>
+      </div>
+    </div>
+
     <!-- Faixa de Números e Autoridade -->
     <section class="stats-strip" aria-label="Números de destaque">
       <div class="container stats-grid">
         <div class="stat-card">
-          <span class="stat-number">+10</span>
+          <span class="stat-number" data-count-target="10" data-prefix="+">+10</span>
           <span class="stat-unit">ANOS</span>
           <p class="stat-desc">De prática real nos palcos e nas salas de musculação</p>
         </div>
@@ -163,12 +216,12 @@
           <p class="stat-desc">Atleta profissional gabaritado internacionalmente</p>
         </div>
         <div class="stat-card">
-          <span class="stat-number">+84k</span>
+          <span class="stat-number" data-count-target="84" data-prefix="+" data-suffix="k">+84k</span>
           <span class="stat-unit">SEGUIDORAS</span>
           <p class="stat-desc">Comunidade engajada acompanhando o trabalho diariamente</p>
         </div>
         <div class="stat-card">
-          <span class="stat-number">100%</span>
+          <span class="stat-number" data-count-target="100" data-suffix="%">100%</span>
           <span class="stat-unit">INDIVIDUAL</span>
           <p class="stat-desc">Treinos adaptados aos aparelhos exatos do seu espaço</p>
         </div>
@@ -204,7 +257,7 @@
 
           <!-- Cards Comparativos de Hábitos -->
           <div class="confrontation-cards">
-            <div class="comparison-side red-side">
+            <div class="comparison-side reveal-item red-side">
               <div class="side-header">
                 <span class="status-icon red-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="svg-inline-status"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
@@ -220,7 +273,7 @@
               </ul>
             </div>
 
-            <div class="comparison-side green-side">
+            <div class="comparison-side reveal-item green-side">
               <div class="side-header">
                 <span class="status-icon blue-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="svg-inline-status"><polyline points="20 6 9 17 4 12"/></svg>
@@ -338,7 +391,7 @@
         </div>
 
         <div class="steps-grid">
-          <div class="step-card">
+          <div class="step-card reveal-item">
             <div class="step-badge">ETAPA 01</div>
             <div class="step-icon-wrap" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="svg-step-icon"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M9 12h6"/><path d="M9 16h6"/></svg>
@@ -349,7 +402,7 @@
             </p>
           </div>
 
-          <div class="step-card highlight-step">
+          <div class="step-card reveal-item highlight-step">
             <div class="step-badge special">ETAPA 02</div>
             <div class="step-icon-wrap" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="svg-step-icon"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="4"/></svg>
@@ -360,7 +413,7 @@
             </p>
           </div>
 
-          <div class="step-card">
+          <div class="step-card reveal-item">
             <div class="step-badge">ETAPA 03</div>
             <div class="step-icon-wrap" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="svg-step-icon"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
@@ -391,7 +444,7 @@
 
         <div class="results-grid">
           <!-- Card 1: Foto 10 - Glúteo e Celulite -->
-          <div class="result-card">
+          <div class="result-card reveal-item tilt-card">
             <div class="result-image-box">
               <img src="assets/images/photo-10.jpg" alt="Evolução de glúteo e melhora postural da aluna" class="result-img">
             </div>
@@ -409,7 +462,7 @@
           </div>
 
           <!-- Card 2: Foto 06 - 3 meses de acompanhamento -->
-          <div class="result-card">
+          <div class="result-card reveal-item tilt-card">
             <div class="result-image-box">
               <img src="assets/images/photo-06.jpg" alt="Antes e depois de aluna em 3 meses de consultoria" class="result-img">
             </div>
@@ -427,7 +480,7 @@
           </div>
 
           <!-- Card 3: Foto 16 - Treino e Glúteos -->
-          <div class="result-card">
+          <div class="result-card reveal-item tilt-card">
             <div class="result-image-box">
               <img src="assets/images/photo-16.jpg" alt="Correção de exercícios de glúteo e resultado" class="result-img">
             </div>
@@ -445,7 +498,7 @@
           </div>
 
           <!-- Card 4: Foto 02 - Cintura e Glúteos -->
-          <div class="result-card">
+          <div class="result-card reveal-item tilt-card">
             <div class="result-image-box">
               <img src="assets/images/photo-02.jpg" alt="Aluna com cintura afinada e postura renovada" class="result-img">
             </div>
@@ -488,7 +541,7 @@
         </div>
 
         <div class="included-grid">
-          <div class="included-card">
+          <div class="included-card reveal-item">
             <div class="inc-icon-wrap" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="svg-inc-icon"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
             </div>
@@ -496,7 +549,7 @@
             <p class="inc-desc">Seu planejamento completo na tela do celular, com contagem de séries, cronômetro de descanso e registro de cargas.</p>
           </div>
 
-          <div class="included-card">
+          <div class="included-card reveal-item">
             <div class="inc-icon-wrap" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="svg-inc-icon"><polygon points="5 3 19 12 5 21 5 3"/></svg>
             </div>
@@ -504,7 +557,7 @@
             <p class="inc-desc">Demonstrações em vídeo com explicações detalhadas de postura, pegada e amplitude para cada exercício da sua ficha.</p>
           </div>
 
-          <div class="included-card">
+          <div class="included-card reveal-item">
             <div class="inc-icon-wrap" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="svg-inc-icon"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
             </div>
@@ -512,7 +565,7 @@
             <p class="inc-desc">Envie vídeos dos seus treinos para correção e tire qualquer dúvida diretamente com José Mário ao longo da semana.</p>
           </div>
 
-          <div class="included-card">
+          <div class="included-card reveal-item">
             <div class="inc-icon-wrap" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="svg-inc-icon"><path d="M12 2a5 5 0 0 1 5 5v3a5 5 0 0 1-10 0V7a5 5 0 0 1 5-5z"/><path d="M19 14v4a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4v-4"/></svg>
             </div>
@@ -520,7 +573,7 @@
             <p class="inc-desc">Distribuição inteligente de estímulos para maximizar a hipertrofia nos pontos certos sem engrossar a cintura.</p>
           </div>
 
-          <div class="included-card">
+          <div class="included-card reveal-item">
             <div class="inc-icon-wrap" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="svg-inc-icon"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="12" r="3"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="3" y1="10" x2="3" y2="14"/><line x1="21" y1="10" x2="21" y2="14"/></svg>
             </div>
@@ -528,7 +581,7 @@
             <p class="inc-desc">Não importa se você treina em rede grande, academia de bairro ou estúdio de condomínio: o treino é moldado aos seus aparelhos.</p>
           </div>
 
-          <div class="included-card">
+          <div class="included-card reveal-item">
             <div class="inc-icon-wrap" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="svg-inc-icon"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
             </div>
@@ -599,7 +652,7 @@
 
         <div class="pricing-grid">
           <!-- Plano Mensal -->
-          <div class="pricing-card">
+          <div class="pricing-card reveal-item tilt-card">
             <div class="plan-header">
               <h3 class="plan-name">Plano Mensal</h3>
               <p class="plan-tagline">Para quem quer conhecer o método</p>
@@ -624,7 +677,7 @@
           </div>
 
           <!-- Plano Trimestral (Destaque Principal) -->
-          <div class="pricing-card featured-plan">
+          <div class="pricing-card reveal-item tilt-card featured-plan">
             <div class="featured-badge">RECOMENDADO: CICLO COMPLETO</div>
             <div class="plan-header">
               <h3 class="plan-name">Plano Trimestral</h3>
@@ -654,7 +707,7 @@
           </div>
 
           <!-- Plano Semestral -->
-          <div class="pricing-card">
+          <div class="pricing-card reveal-item tilt-card">
             <div class="plan-header">
               <h3 class="plan-name">Plano Semestral</h3>
               <p class="plan-tagline">Construção física sólida e sustentável</p>
