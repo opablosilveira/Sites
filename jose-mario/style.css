@@ -1311,47 +1311,83 @@ section {
   color: var(--text-muted);
 }
 
-.plan-price {
+/* Metadados e Duração do Ciclo de Consultoria */
+.cycle-meta {
   text-align: center;
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
+  margin-bottom: 1.4rem;
+  padding-bottom: 1.3rem;
   border-bottom: 1px solid var(--border-subtle);
 }
 
-.plan-price .currency {
-  font-size: 1.2rem;
-  color: var(--text-secondary);
+.cycle-duration {
+  margin-bottom: 0.75rem;
 }
 
-.plan-price .amount {
+.duration-highlight {
+  display: block;
   font-family: var(--font-display);
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   color: #ffffff;
   line-height: 1;
+  letter-spacing: 0.04em;
 }
 
-.plan-price .period {
-  font-size: 0.9rem;
+.cycle-duration.featured-duration .duration-highlight {
+  color: var(--accent-blue-light);
+  text-shadow: 0 0 24px rgba(0, 102, 255, 0.45);
+}
+
+.duration-sub {
+  display: block;
+  font-size: 0.78rem;
   color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-top: 0.35rem;
+  font-weight: 600;
 }
 
-.installments {
-  font-size: 1.15rem;
+.cycle-focus-badge {
+  display: inline-block;
+  font-size: 0.74rem;
   font-weight: 700;
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  letter-spacing: 0.03em;
+}
+
+.cycle-focus-badge.featured-focus {
   color: #ffffff;
+  background: rgba(0, 102, 255, 0.16);
+  border-color: rgba(0, 102, 255, 0.4);
+  box-shadow: 0 0 16px rgba(0, 102, 255, 0.2);
 }
 
-.amount-inst {
-  font-family: var(--font-display);
-  font-size: 2.8rem;
-  color: var(--accent-blue);
-  line-height: 1;
+.cycle-target {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1rem;
+  margin-bottom: 1.6rem;
 }
 
-.cash-price {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin-top: 0.3rem;
+.target-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: var(--accent-blue-light);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.3rem;
+}
+
+.target-text {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin: 0;
 }
 
 .plan-benefits {
